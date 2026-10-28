@@ -1,0 +1,15 @@
+[package]
+name = "geo-precision-guard"
+version = "1.0.0"
+edition = "2021"
+rust-version = "1.70"
+description = "Uncertainty-aware coordinate checks for property listings: distance bounds, approximate location and antimeridian-safe boxes."
+license = "MIT"
+homepage = "https://novasia.estate/"
+repository = "https://github.com/novasia-estate/geo-precision-guard"
+readme = "README.md"
+keywords = ["real-estate", "coordinates", "geospatial", "uncertainty", "validation"]
+categories = ["science::geo", "data-structures"]
+include = ["src/**", "examples/**", "README.md", "LICENSE", "CHANGELOG.md"]
+
+[dependencies]
