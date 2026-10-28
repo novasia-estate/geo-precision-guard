@@ -10,7 +10,9 @@ jobs:
       - run: cargo test
       - run: cargo run --example approximate_pin
       - run: cargo publish --dry-run
+      - run: cargo package --target-dir target
       - uses: actions/upload-artifact@v4
         with:
           name: geo-precision-guard-1.0.0
           path: target/package/geo-precision-guard-1.0.0.crate
+          if-no-files-found: error
